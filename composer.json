@@ -1,5 +1,5 @@
 {
-    "name": "contao/contao-page-to-ajax-bundle",
+    "name": "postyou/contao-page-to-ajax-bundle",
     "type": "contao-bundle",
     "description": "Load Contao Page over Ajax",
     "license": "LGPL-3.0-or-later",
@@ -29,7 +29,7 @@
         "symfony/phpunit-bridge": "^3.2"
     },
     "extra": {
-        "contao-manager-plugin": "Contao\\ContaoPageToAjaxBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Postyou\\ContaoPageToAjaxBundle\\ContaoManager\\Plugin"
     },
     "autoload": {
         "psr-4": {
