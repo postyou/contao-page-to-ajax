@@ -8,7 +8,7 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace Postyou\PageToAjaxBundle;
+namespace Postyou\ContaoPageToAjaxBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
