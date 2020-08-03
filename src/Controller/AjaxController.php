@@ -4,9 +4,11 @@
 namespace Postyou\ContaoPageToAjaxBundle\Controller;
 
 use Postyou\ContaoPageToAjaxBundle\Pages\PageAjax;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Contao\CoreBundle\Controller\FrontendController;
+use Symfony\Component\Routing\Annotation\Route;
+
+
 
 class AjaxController extends FrontendController
 {
