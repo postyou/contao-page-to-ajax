@@ -7,6 +7,7 @@ use Postyou\ContaoPageToAjaxBundle\Pages\PageAjax;
 use Symfony\Component\HttpFoundation\Response;
 use Contao\CoreBundle\Controller\FrontendController;
 use Symfony\Component\Routing\Annotation\Route;
+use Contao\Input;
 
 
 
@@ -24,11 +25,11 @@ class AjaxController extends FrontendController
 
         $pageAjax = new PageAjax();
 
-        if (!empty(\Input::get('pageId'))) {
-            $intPage = intval(\Input::get('pageId'));
+        if (!empty(Input::get('pageId'))) {
+            $intPage = intval(Input::get('pageId'));
             $objPage = \Contao\PageModel::findWithDetails($intPage);
-        } else if (!empty(\Input::get('articleId'))) {
-            $intArticle = intval(\Input::get('articleId'));
+        } else if (!empty(Input::get('articleId'))) {
+            $intArticle = intval(Input::get('articleId'));
             //$objArticle = \Contao\ArticleModel::findByPid($intArticle);
             return $pageAjax->getArticleResponse($intArticle);
         }
