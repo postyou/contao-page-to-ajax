@@ -42,7 +42,8 @@ class PageAjax extends \Contao\PageRegular
     }
 
     public function getArticleResponse($intArticle) {
-        return new Response(self::getArticle($intArticle));
+        $article = \Contao\StringUtil::restoreBasicEntities(self::getArticle($intArticle));
+        return new Response($article);
     }
 
 
