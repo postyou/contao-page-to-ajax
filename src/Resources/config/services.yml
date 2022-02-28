@@ -1,4 +1,8 @@
 services:
+    _defaults:
+        autowire: true  
+        autoconfigure: true
+
     _instanceof:
         Contao\CoreBundle\Framework\FrameworkAwareInterface:
             calls:
@@ -7,3 +11,5 @@ services:
         Symfony\Component\DependencyInjection\ContainerAwareInterface:
             calls:
                 - ["setContainer", ["@service_container"]]
+
+    Postyou\ContaoPageToAjaxBundle\Controller\AjaxController:
